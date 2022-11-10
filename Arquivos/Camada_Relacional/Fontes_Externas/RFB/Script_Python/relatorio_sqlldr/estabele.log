@@ -1,0 +1,176 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Thu Sep 15 12:12:25 2022
+Version 21.5.0.0.0
+
+Copyright (c) 1982, 2022, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /home/ufc/carga_nova_rfb/carga_v2/estabelecimento.ctl
+Character Set WE8MSWIN1252 specified for all input.
+
+There are 10 data files:
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y0.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y0.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y1.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y1.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y2.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y2.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y3.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y3.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y4.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y4.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y5.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y5.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y6.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y6.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y7.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y7.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y8.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y8.D20813.ESTABELE.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/estabelecimento/K3241.K03200Y9.D20813.ESTABELE.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/estabelecimento.bad
+  Discard File: /home/ufc/carga_nova_rfb/carga_v2/estabelecimento.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 9999999
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EXTR_ESTABELECIMENTO, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CNPJ_BASICO                         FIRST     *   ;  O(") CHARACTER            
+                                                      O(")
+CNPJ_ORDEM                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CNPJ_DV                              NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+MATRIZ_FILIAL                        NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NOME_FANTASIA                        NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+SITUACAO                             NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DATA_SITUACAO                        NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+MOTIVO_SITUACAO                      NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NM_CIDADE_EXTERIOR                   NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COD_PAIS                             NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DATA_INICIO_ATIV                     NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CNAE_FISCAL                          NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CNAE_FISCAL_SEC                      NEXT  1607   ;  O(") CHARACTER            
+                                                      O(")
+TIPO_LOGRADOURO                      NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+LOGRADOURO                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NUMERO                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COMPLEMENTO                          NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+BAIRRO                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CEP                                  NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+UF                                   NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COD_MUNICIPIO                        NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DDD_1                                NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+TELEFONE_1                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DDD_2                                NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+TELEFONE_2                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DDD_FAX                              NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NUM_FAX                              NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+EMAIL                                NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+SIT_ESPECIAL                         NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DATA_SIT_ESPECIAL                    NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+
+value used for ROWS parameter changed from 250 to 115
+
+Table EXTR_ESTABELECIMENTO:
+  53642844 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1045580 bytes(115 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      53642844
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Sep 15 12:12:25 2022
+Run ended on Thu Sep 15 12:53:41 2022
+
+Elapsed time was:     00:41:15.93
+CPU time was:         00:08:37.20

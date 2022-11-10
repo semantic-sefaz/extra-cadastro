@@ -1,0 +1,2012 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+    }, {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/name"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit"
+    }, {
+      "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Concept that classifies an Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Papel"
+  }, {
+    "@language" : "en",
+    "@value" : "Role"
+  }, {
+    "@language" : "it",
+    "@value" : "Ruolo"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relation between an object and a role, e.g. the person 'John' has role 'student'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha ruolo"
+  }, {
+    "@language" : "en",
+    "@value" : "has role"
+  }, {
+    "@language" : "pt",
+    "@value" : "tem papel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relation between an object and a role, e.g. the 'student' is the role of 'John'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is role of"
+  }, {
+    "@language" : "it",
+    "@value" : "è un ruolo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "Informar o CEP do endereço , atualizado de acordo com a página da Empresa de Correios e Telégrafos – ECT na internet (http://www.correios.com.br/).\n\nIndicar o tipo de logradouro do endereço.\nIndicar o logradouro do endereço.\nInformar o bairro/distrito do endereço.\nInformar o município do endereço.\nInformar a sigla do estado para o endereço.\nIndicar o número do endereço.\nIndicar o tipo de complemento, informando os dados adicionais, se necessário, do endereço.\nInformar pontos de referência de conhecimento popular."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Address"
+  }, {
+    "@language" : "pt",
+    "@value" : "Endereço"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "Informar a cidade para termos de localização."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Cidade"
+  }, {
+    "@language" : "en",
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  }, {
+    "@id" : "_:genid81"
+  }, {
+    "@id" : "_:genid82"
+  }, {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "País"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "O distrito será recuperado automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.\n\nCaso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.\n\nObservação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado.\n\nObservação: Esse campo será habilitado para preenchimento dependendo do interesse dos órgãos conveniados (Estados ou Municípios)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "District"
+  }, {
+    "@language" : "pt",
+    "@value" : "Distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  }, {
+    "@id" : "_:genid84"
+  }, {
+    "@id" : "_:genid85"
+  }, {
+    "@id" : "_:genid86"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "A UF será recuperada automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.\n\nCaso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.\n\nObservação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Federative Unit"
+  }, {
+    "@language" : "pt",
+    "@value" : "Unidade Federativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  }, {
+    "@id" : "_:genid87"
+  }, {
+    "@id" : "_:genid88"
+  }, {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Frete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Natureza Legal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid90"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Logradouro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "pt",
+    "@value" : "Escolher a localização onde seu estabelecimento está situado.\n\nAtenção: O estabelecimento pode estar numa rua, num pólo industrial, num pólo irrigado ou num shopping que não esteja previamente cadastrado. Neste caso, escolha a opção “Zona Urbana ou Zona Rural”."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Localização"
+  }, {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid91"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Nota_Referenciada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "alcance da entidade"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/descricao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem_endereco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem cidade"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem país"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem bairro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem atividade econômica"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "tem parte"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/name"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_diferimento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid54"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "identificador de uma pessoa"
+  }, {
+    "@language" : "en",
+    "@value" : "person identifier"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid61"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid72"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid75"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_diferido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid78"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal"
+  } ]
+}, {
+  "@id" : "http://www.sefaz.ma.gov.br/ontology/NFE/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has broader"
+  }, {
+    "@language" : "pt",
+    "@value" : "mais geral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relates a concept to a concept that is more general in meaning."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has broader transitive"
+  }, {
+    "@language" : "pt",
+    "@value" : "mais geral transitivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "skos:broaderTransitive is a transitive superproperty of skos:broader."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "example"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An example of the use of a concept."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has narrower"
+  }, {
+    "@language" : "pt",
+    "@value" : "mais específico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relates a concept to a concept that is more specific in meaning."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has narrower transitive"
+  }, {
+    "@language" : "pt",
+    "@value" : "mais específico transitivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "skos:narrowerTransitive is a transitive superproperty of skos:narrower."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Empresa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "pt",
+    "@value" : "Pessoa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  }, {
+    "@id" : "_:genid92"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  }, {
+    "@language" : "pt",
+    "@value" : "nome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ]
+} ]

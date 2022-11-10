@@ -1,0 +1,137 @@
+
+SQL*Loader: Release 21.0.0.0.0 - Production on Thu Sep 15 03:06:46 2022
+Version 21.5.0.0.0
+
+Copyright (c) 1982, 2022, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /home/ufc/carga_nova_rfb/carga_v2/socio.ctl
+Character Set WE8MSWIN1252 specified for all input.
+
+There are 10 data files:
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y0.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y0.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y1.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y1.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y2.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y2.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y3.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y3.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y4.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y4.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y5.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y5.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y6.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y6.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y7.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y7.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y8.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/K3241.K03200Y8.D20813.SOCIOCSV.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+Data File:      /home/ufc/carga_nova_rfb/output/socio/K3241.K03200Y9.D20813.SOCIOCSV.csv
+  File processing option string: "str '
+'"
+  Bad File:     /home/ufc/carga_nova_rfb/carga_v2/socio.bad
+  Discard File: /home/ufc/carga_nova_rfb/carga_v2/socio.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 9999999
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EXTR_SOCIO, loaded from every logical record.
+Insert option in effect for this table: TRUNCATE
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CNPJ_BASICO                         FIRST     *   ;  O(") CHARACTER            
+                                                      O(")
+TIPO_SOCIO                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NOME_SOCIO                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CNPJ_CPF_SOCIO                       NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COD_QUALIFICACAO                     NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+DATA_ENTRADA                         NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COD_PAIS_EXT                         NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CPF_REPRES                           NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NOME_REPRES                          NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+COD_QUALIF_REPRES                    NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+FAIXA_ETARIA                         NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+
+
+Table EXTR_SOCIO:
+  21880755 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 709500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      21880755
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Sep 15 03:06:46 2022
+Run ended on Thu Sep 15 03:19:24 2022
+
+Elapsed time was:     00:12:37.79
+CPU time was:         00:01:18.58

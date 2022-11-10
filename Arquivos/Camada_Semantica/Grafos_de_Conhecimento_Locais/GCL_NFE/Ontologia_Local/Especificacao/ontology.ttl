@@ -1,0 +1,1387 @@
+@prefix : <http://www.sefaz.ma.gov.br/ontology/NFE/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.sefaz.ma.gov.br/ontology/NFE/> .
+
+<http://www.sefaz.ma.gov.br/ontology/NFE/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> ;
+                                                                      owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> ;
+                                                                      rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> ;
+                                                                      rdfs:comment "A relation between an object and a role, e.g. the person 'John' has role 'student'." ;
+                                                                      rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
+                                                                      rdfs:label "ha ruolo"@it ,
+                                                                                 "has role"@en ,
+                                                                                 "tem papel"@pt .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> ;
+                                                                       rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> ;
+                                                                       rdfs:range <http://xmlns.com/foaf/0.1/Person> ;
+                                                                       rdfs:comment "A relation between an object and a role, e.g. the 'student' is the role of 'John'." ;
+                                                                       rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
+                                                                       rdfs:label "is role of"@en ,
+                                                                                  "è un ruolo di"@it .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain [ rdf:type owl:Class ;
+                                                                                   owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento>
+                                                                                                 <http://xmlns.com/foaf/0.1/Person>
+                                                                                               )
+                                                                                 ] ;
+                                                                     rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> ;
+                                                                    rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> rdf:type owl:ObjectProperty ;
+                                                                 owl:inverseOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> ;
+                                                                              rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> rdf:type owl:ObjectProperty ,
+                                                                           owl:FunctionalProperty ;
+                                                                  rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                  rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> ;
+                                                                  rdfs:label "tem_endereco"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> rdf:type owl:ObjectProperty ,
+                                                                        owl:FunctionalProperty ;
+                                                               rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> ;
+                                                               rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> ;
+                                                               rdfs:label "tem cidade"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> ;
+                                                                  rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> ;
+                                                                  rdfs:label "tem país"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> ;
+                                                                   rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> ;
+                                                                   rdfs:label "tem bairro"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                            rdfs:label "tem atividade econômica"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> rdf:type owl:ObjectProperty ;
+                                                               rdfs:label "tem parte"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> ;
+                                                                       rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                           rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada>
+                                                                                                 )
+                                                                                   ] ;
+                                                                       rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> ;
+                                                                                rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                                 owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal>
+                                                                                               <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega>
+                                                                                               <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada>
+                                                                                             )
+                                                                               ] ;
+                                                                   rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                  rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                             rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                          rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                            rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> ;
+                                                                  rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes> rdf:type owl:ObjectProperty ;
+                                                                                               rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                                               rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                                  <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                                  <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega>
+                                                                                                  <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada>
+                                                                                                )
+                                                                                  ] ;
+                                                                      rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> ;
+                                                                                  rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain [ rdf:type owl:Class ;
+                                                                                                   owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                                 <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                                                                                                                 <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                               )
+                                                                                                 ] ;
+                                                                                     rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> ;
+                                                                           rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                 rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada> rdf:type owl:ObjectProperty ,
+                                                                                     owl:ReflexiveProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                            rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                              rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> ;
+                                                                            rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> ;
+                                                                            rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> ;
+                                                                            rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                   rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                        rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                       rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> ;
+                                                                                      rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> ;
+                                                                        rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS> ;
+                                                                        rdfs:range <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#broaderTransitive> ;
+                                              owl:inverseOf <http://www.w3.org/2004/02/skos/core#narrower> ;
+                                              rdfs:comment "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."@en ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                              rdfs:label "has broader"@en ,
+                                                         "mais geral"@pt ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "Relates a concept to a concept that is more general in meaning."@en ;
+                                              <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#broaderTransitive
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#semanticRelation> ;
+                                                        owl:inverseOf <http://www.w3.org/2004/02/skos/core#narrowerTransitive> ;
+                                                        rdf:type owl:TransitiveProperty ;
+                                                        rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                        rdfs:label "has broader transitive"@en ,
+                                                                   "mais geral transitivo"@pt ;
+                                                        <http://www.w3.org/2004/02/skos/core#definition> "skos:broaderTransitive is a transitive superproperty of skos:broader." ;
+                                                        <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#narrowerTransitive> ;
+                                               rdfs:comment "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "has narrower"@en ,
+                                                          "mais específico"@pt ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relates a concept to a concept that is more specific in meaning."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowerTransitive
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#semanticRelation> ;
+                                                         rdf:type owl:TransitiveProperty ;
+                                                         rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                         rdfs:label "has narrower transitive"@en ,
+                                                                    "mais específico transitivo"@pt ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "skos:narrowerTransitive is a transitive superproperty of skos:narrower." ;
+                                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#semanticRelation
+<http://www.w3.org/2004/02/skos/core#semanticRelation> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:label "alcance da entidade"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                 )
+                                                                                   ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> ;
+                                                           rdf:type owl:FunctionalProperty ;
+                                                           rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> ;
+                                                           rdfs:range xsd:string ;
+                                                           owl:propertyDisjointWith <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                    rdf:type owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> ;
+                                                                    rdfs:range xsd:string .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                              rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                     rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                                rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                             rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                               rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                                          rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                      rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                          rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> ;
+                                                                           rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> ;
+                                                          rdf:type owl:FunctionalProperty ;
+                                                          rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                                          rdfs:range xsd:string .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                                 owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal>
+                                                                                               <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal>
+                                                                                             )
+                                                                               ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/descricao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/descricao> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                          owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                        <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                      )
+                                                                        ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador>
+                                                                                                   )
+                                                                                     ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain [ rdf:type owl:Class ;
+                                                                                                owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                                              <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                                            )
+                                                                                              ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                                      <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                                    )
+                                                                                      ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS>
+                                                                                                     <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO>
+                                                                                                   )
+                                                                                     ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+                                                                     rdfs:range xsd:string .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item>
+                                                                                         <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa>
+                                                                                         <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal>
+                                                                                       )
+                                                                         ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_diferimento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_diferimento> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                     rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                                          owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST>
+                                                                                                        <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                      )
+                                                                                        ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                                                  owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                                                                                                                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                              )
+                                                                                                ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                        rdfs:label "identificador de uma pessoa"@pt ,
+                                                                                   "person identifier"@en .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> ;
+                                                                rdf:type owl:FunctionalProperty ;
+                                                                rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+                                                                rdfs:range xsd:string .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF>
+                                                                                           <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF>
+                                                                                         )
+                                                                           ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain [ rdf:type owl:Class ;
+                                                                                           owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                         <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                       )
+                                                                                         ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                                                               owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                             <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                                                                                                             <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                           )
+                                                                                             ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                                                                                                   <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+                                                                                                 )
+                                                                                   ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain [ rdf:type owl:Class ;
+                                                                                           owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA>
+                                                                                                         <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS>
+                                                                                                       )
+                                                                                         ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain [ rdf:type owl:Class ;
+                                                                                          owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA>
+                                                                                                        <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS>
+                                                                                                      )
+                                                                                        ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_diferido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_diferido> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa>
+                                                                                              <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal>
+                                                                                            )
+                                                                              ] .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf rdfs:label ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:label "name"@en ,
+                                            "nome"@pt .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> rdf:type owl:Class ;
+                                                                   rdfs:comment "A Concept that classifies an Object" ;
+                                                                   rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> ;
+                                                                   rdfs:label "Papel"@pt ,
+                                                                              "Role"@en ,
+                                                                              "Ruolo"@it .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> rdf:type owl:Class ;
+                                                              rdfs:comment """Informar o CEP do endereço , atualizado de acordo com a página da Empresa de Correios e Telégrafos – ECT na internet (http://www.correios.com.br/).
+
+Indicar o tipo de logradouro do endereço.
+Indicar o logradouro do endereço.
+Informar o bairro/distrito do endereço.
+Informar o município do endereço.
+Informar a sigla do estado para o endereço.
+Indicar o número do endereço.
+Indicar o tipo de complemento, informando os dados adicionais, se necessário, do endereço.
+Informar pontos de referência de conhecimento popular."""@pt ;
+                                                              rdfs:label "Address"@en ,
+                                                                         "Endereço"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> ;
+                                                                             owl:someValuesFrom <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit>
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> ;
+                                                                             owl:someValuesFrom xsd:string
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty rdfs:label ;
+                                                                             owl:someValuesFrom xsd:string
+                                                                           ] ;
+                                                           rdfs:comment "Informar a cidade para termos de localização."@pt ;
+                                                           rdfs:label "Cidade"@pt ,
+                                                                      "City"@en .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> rdf:type owl:Class ;
+                                                              rdfs:label "País"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> ,
+                                                                                      <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> ;
+                                                                                 owl:someValuesFrom <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> ;
+                                                                                 owl:someValuesFrom <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty rdfs:label ;
+                                                                                 owl:someValuesFrom xsd:string
+                                                                               ] ;
+                                                               rdfs:comment """O distrito será recuperado automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.
+
+Caso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.
+
+Observação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado.
+
+Observação: Esse campo será habilitado para preenchimento dependendo do interesse dos órgãos conveniados (Estados ou Municípios)."""@pt ;
+                                                               rdfs:label "District"@en ,
+                                                                          "Distrito"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> ,
+                                                                                  <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> ;
+                                                                                        owl:someValuesFrom <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF> ;
+                                                                                        owl:someValuesFrom xsd:string
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty rdfs:label ;
+                                                                                        owl:someValuesFrom xsd:string
+                                                                                      ] ;
+                                                                      rdfs:comment """A UF será recuperada automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.
+
+Caso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.
+
+Observação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado."""@pt ;
+                                                                      rdfs:label "Federative Unit"@en ,
+                                                                                 "Unidade Federativa"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Frete> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty rdfs:label ;
+                                                                                     owl:someValuesFrom xsd:string
+                                                                                   ] ;
+                                                                   rdfs:label "Natureza Legal"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> ;
+                                                               rdfs:label "Logradouro"@pt .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> rdf:type owl:Class ;
+                                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty rdfs:label ;
+                                                                                 owl:someValuesFrom xsd:string
+                                                                               ] ;
+                                                               rdfs:comment """Escolher a localização onde seu estabelecimento está situado.
+
+Atenção: O estabelecimento pode estar numa rua, num pólo industrial, num pólo irrigado ou num shopping que não esteja previamente cadastrado. Neste caso, escolha a opção “Zona Urbana ou Zona Rural”."""@pt ;
+                                                               rdfs:label "Localização"@pt ,
+                                                                          "Location"@en .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Nota_Referenciada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Nota_Referenciada> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> rdf:type owl:Class .
+
+
+###  http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                         owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ;
+                                         rdfs:label "Empresa"@pt .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://xmlns.com/foaf/0.1/name> ;
+                                                     owl:someValuesFrom xsd:string
+                                                   ] ;
+                                   rdfs:label "Pessoa"@pt .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.w3.org/2004/02/skos/core#example> rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "example"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "An example of the use of a concept."@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO>
+                <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST>
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

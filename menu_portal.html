@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
+    <!-- required -->
+    <link rel="stylesheet" type="text/css" media="all" href="menu/css/stellarnav.css">
+    <!-- required -->
+<style>
+/* styles for this sample only */
+*{ margin: 0; padding: 0; }
+body { font-size: 16px; font-family: 'Exo 2', sans-serif; color: #555; top: 0px; position: fixed }
+.header { text-align: center; }
+.header a { padding: 30px 0 0; display: block; font-size: 48px; text-decoration: none; color: #555; }
+.header p { margin: 10px 0 40px 0; font-size: 18px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.posfix {top: 0px; position: fixed; z-index: 100;}
+@media only screen and (max-width : 1000px) {
+    .stellarnav > ul > li > a { padding: 20px 23px; }
+}
+/* styles for this sample only */
+</style>
+
+
+</head>
+
+
+<body>
+    <div id='menu_custom_div_sticky' class="stellarnav">
+        <ul id="menu-main-menu" class="menu">
+                    <li>
+                       <a href="index.html"><span>Início</span></a>
+                       <!--<ul class="sub-menu">
+                            <li>
+                                <a href="index.html"><span>O que é o portal semântico da SEFAZ-MA?</span></a>
+                            </li>
+                            <li>
+                                <a href="grafo_conhecimento.html"><span>Grafo de Conhecimento</span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="./grafo_conhecimento.html"><span><i></i>O que é o Grafo de Conhecimento SEFAZ-MA?</span></a>
+                                    </li>
+                                </ul>
+                           </li>
+                            <li>
+                            <a href="arquitetura_portal.html"><span>Arquitetura do Portal Semântico da SEFAZ-MA</span></a>
+                            </li>
+                            
+                        </ul>
+                    -->
+                    </li>
+                    <li>
+                        <a href="camada_fontes.html"><span>Camada Fontes de Dados</span></a>
+                            <ul class="sub-menu">
+
+                               <li>
+                                   <a href="cadsefaz_fonte.html"><span>Extracadastro</span></a>   
+                               </li>
+
+                            </ul>
+                    </li>
+              
+                    <li>
+                        <a href="camada_relacional.html"><span>Camada Relacional</span></a>
+                        <ul class="sub-menu">
+                            <!--<li>
+                                 <a href="camada_relacional.html"><span>O que é a Camada Relacional?</span></a>
+                             </li>
+                             <li>-->
+                                 <!--<a href="visoes_relacionais.html"><span>Visões Relacionais</span></a>
+                                 <ul class="sub-menu">-->
+                                    <li>
+                                        <a href="cadsefaz_relacional.html"><span>Cadastro SEFAZ</span></a>   
+                                        <ul>
+                                            <li>
+                                                <a href="cadsefaz_fonte.html"><span>Fonte de Dados Original</span></a>   
+                                            </li>
+                                            <li>
+                                                <a target='_' href="./Arquivos/Camada_Relacional/Fontes_Internas/Cadastro/Esquema_Normalizado/Diagrama_Relacional_Cadastro.drawio.svg" > <span>Esquema Tabelas Normalizadas</span></a>   
+                                            </li>
+                                            <li>
+                                                <a target='_' href="./Arquivos/Camada_Relacional/Fontes_Internas/Cadastro/Script_SQL/Cadastro.sql" ><span>Script das Visões</span></a>   
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                <!--- </ul>
+                             </li>-->
+                         </ul>
+                     </li>
+
+                    <li>
+                        <a href="camada_semantica.html"><span>Camada Semântica</span></a>
+                        <ul class="sub-menu">
+                           <!--- <li>
+                                <a href="visao_semantica.html"><span>O que é a Camada Semântica</span></a>
+                            </li>-->
+                            <li>
+                                <a href="ontologia_dominio.html"><span>Ontologia de Domínio</span></a>
+                            </li>
+                           <!---- <li>
+                                                <a href="./vekg.html"><span><i></i>VEKG: Vocabulário do EKG da Sefaz </span></a>
+                            </li>-->
+                                    <!-- Removido por hora devido a ausencia dos links corretos
+                                    <li>
+                                                <a target="_" href="http://localhost:7400/graphs-visualizations?uri=http:%2F%2Fwww.sefaz.ma.gov.br%2FRFB%2Fresource%2FOrganization%2F03995515-MATEUS_SUPERMERCADOS_SA"><span><i></i>RFB</span></a>
+                                    </li>
+                                    <li>
+                                                <a target="_" href="http://localhost:7400/graphs-visualizations?uri=http:%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FOrganization%2F039955150%2F"><span><i></i>Cadastro SEFAZ</span></a>
+                                    </li>
+                                    <li>
+                                                <a> <span>IBGE</span></a>
+                                                <ul class="sub-menu">
+                                                <li><a target="_" href="http://localhost:7400/graphs-visualizations?uri=http:%2F%2Fwww.sefaz.ma.gov.br%2FIBGE%2FCNAE%2Fresource%2FEconomic_Activity%2FCNAE_0.0_GRUPO-RECICLAGEM_DE_SUCATAS_METALICAS"><span>CNAE</span></a></li>
+                                                <li><a target="_" href="http://localhost:7400/graphs-visualizations?uri=http:%2F%2Fwww.sefaz.ma.gov.br%2FIBGE%2FCNAE%2Fresource%2FEconomic_Activity%2FCNAE_0.0_GRUPO-RECICLAGEM_DE_SUCATAS_METALICAS"><span>Location</span></a></li>
+                                                </ul>                     
+                                    </li>
+                                    <li>
+                                                <a target="_" href="http://localhost:7400/graphs-visualizations?uri=http:%2F%2Fwww.sefaz.ma.gov.br%2FREDESIM%2FMATEUS_SUPERMERCADOS"><span>REDESIM</span></a>
+                                    </li> -->
+      
+                            <li>
+                                <a href="grafos_locais.html"><span>Grafos de Conhecimento Locais</span></a>
+                                <ul class="sub-menu">
+
+
+                            <!-- Cadastro SEFAZ-->
+                            <li>
+                                <a href="cadsefaz.html"><span>Cadastro SEFAZ</span></a>
+                                    <ul class="sub-menu">
+                                <li>
+                                <li>
+                                    <a href="./cadsefaz_fonte.html"><span>Fonte de Dados Original</span></a>    
+                                </li>
+                                <li>
+                                <a href="osefaz.html"><span>Ontologia</span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a target="_" href="./Arquivos/Camada_Semantica/Grafos_de_Conhecimento_Locais/GCL_Cadastro/Ontologia_Local/Diagrama_de_Classes/Diagrama_Ontologia_Cadastro.drawio.svg"><span>Diagrama de Classes</span></a>    
+                                    </li>
+                                    <li>
+                                        <a target="_" href="./Arquivos/Camada_Semantica/Grafos_de_Conhecimento_Locais/GCL_Cadastro/Ontologia_Local/OWL/Cadastro.owl"><span>Implementação OWL</span></a>    
+                                    </li>
+                                    <li>
+                                        <a target="_" href="./Arquivos/Camada_Semantica/Grafos_de_Conhecimento_Locais/GCL_Cadastro/Ontologia_Local/Especificacao/index-pt.html"><span>Especificação</span></a>    
+                                    </li>
+                                    </ul>
+                                </li>
+                                    <li>
+                                    <a href="./Arquivos/Camada_Semantica/Grafos_de_Conhecimento_Locais/GCL_Cadastro/Mapeamentos/Cadastro.ttl"><span>Mapeamentos</span></a>
+                                    </li>
+                               <!-- <li>
+                                    <a target="_" href="http://10.33.96.18:7200/graphs-visualizations?uri=http:%2F%2Fwww.arida.ufc.br%2FVEKG%23VSL-Cadastro_SEFAZ-MA"><span>Grafo - Visão Semântica (Cadastro SEFAZ)</span></a>
+                                </li>-->
+                                </ul>
+                            </li>
+  
+                            <li>
+                                <a href="./visoes_ligacoes_semanticas.html"><span>Visões de Ligações Semânticas</span></a>
+                               <!-- <ul class="sub-menu">
+                                    <li>
+                                        <a href="./links_rfb.html" ><span>RFB</span></a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="./links_rfb_rfb.html"><span>RFB - RFB</span></a> 
+                                            </li>
+                                            <li>
+                                                <a href="./links_rfb_cadastro.html"><span>RFB - Cadastro Sefaz</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="./links_rfb_cnae.html"><span>RFB - IBGE CNAE</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="./links_rfb_location.html"><span>RFB - IBGE Localização</span></a>  
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="./links_cadastro.html" ><span>Cadastro SEFAZ</span></a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="./links_cadastro_db.html"><span>Cadastro SEFAZ - DBPedia</span></a> 
+                                            </li>
+                                            <li>
+                                                <a href="./links_cadastro_rfb.html"><span>Cadastro SEFAZ - RFB</span></a> 
+                                            </li>
+                                            <li>
+                                                <a href="./links_cadastro_cnae.html"><span>Cadastro SEFAZ - IBGE CNAE</span></a> 
+                                            </li>
+                                            <li>
+                                                <a href="./links_cadastro_redesim.html"><span>Cadastro SEFAZ - REDESIM</span></a> 
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="./links_ibge.html" ><span>IBGE</span></a>
+                                        <ul class="sub-menu">
+                                            
+                                            <li>
+                                                <a><span>CNAE</span></a>
+                                                <ul class="sub-menu">
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a ><span>Localização</span></a>
+                                                <ul class="sub-menu">                
+                                                    <li>
+                                                        <a href="./links_location_db.html"><span>Localização - DBPedia</span></a> 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+
+
+                        </ul>-->
+                        </li>
+
+                    </ul>
+                    </li>
+
+                    <li>
+                        <a  href="camada_acesso_integracao.html"><span>Camada de Acesso e Integração</span></a>
+                        <ul class="sub-menu">
+
+                            <li>
+                                <a target="_" href="http://10.33.96.18:7200/sparql"><span>Endpoint GraphDB</span></a>
+                            </li>
+                            <li>
+                                <a target="_" href="http://10.33.96.18:8080/orardf-21.3.1/?root=data"><span>Endpoint Oracle</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!--<li>-->
+                    <!--    <a href="camada_acesso_integracao.html"><span>Camada de Acesso e Integração</span></a>
+                    </li>-->
+
+                    <li>
+                        <a href="camada_aplicacoes.html" ><span>Camada de Aplicações</span></a>
+
+               
+                        <li>
+                                        <a target="_" href="catalogo.html"><span>Catálogo de Consultas</span></a>
+                        </li>
+                         
+                        <li>
+                            <a href="relatorios.html"><span>Relatórios</span></a>
+                       </li>   
+
+                    </li>
+
+
+
+
+                    </ul>
+                    </li>
+
+
+                    <!--<li>
+                        <a href="consultas.html"><span>Consulta Semântica</span></a>
+                        <ul class="sub-menu">
+                            <li>
+                                        <a href="consultas_sparql.html"><span>Consultas SPARQL</span></a>
+                            </li>
+                            <li>
+                                        <a href="consultas_facetadas.html"><span>Consultas Facetadas</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                -->
+                    
+                   <!-- <li>
+                        <a href="mediador.html"><span>Aplicações Inteligentes</span></a>
+                    </li>-->
+</ul>
+</div><!-- .stellarnav -->
+
+    <script type='text/javascript'>
+        document.addEventListener("DOMContentLoaded", function(){
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 205) {
+                    document.getElementById('menu_custom_div_sticky').classList.add('posfix');
+                } else {
+                    document.getElementById('menu_custom_div_sticky').classList.remove('posfix');
+                } 
+            });
+        }); 
+    </script>
+    <!-- required -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript" src="menu/js/stellarnav.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            jQuery('.stellarnav').stellarNav({
+                theme: 'dark',
+                breakpoint: 960,
+                position: 'right',
+                phoneBtn: '18009997788',
+                locationBtn: 'https://www.google.com/maps'
+            });
+        });
+
+    </script>
+    <!-- required -->
+
+    
+
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+</body>
+</html>

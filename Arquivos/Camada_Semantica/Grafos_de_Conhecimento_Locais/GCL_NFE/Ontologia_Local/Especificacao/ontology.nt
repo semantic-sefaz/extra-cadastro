@@ -1,0 +1,1310 @@
+<http://www.sefaz.ma.gov.br/ontology/NFE/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an object and a role, e.g. the person 'John' has role 'student'." .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "ha ruolo"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "tem papel"@pt .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an object and a role, e.g. the 'student' is the role of 'John'." .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "is role of"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "è un ruolo di"@it .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_agente_fisco> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_estrangeiro> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_substituto_tributario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_address> <http://www.w3.org/2000/01/rdf-schema#label> "tem_endereco"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_city> <http://www.w3.org/2000/01/rdf-schema#label> "tem cidade"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_country> <http://www.w3.org/2000/01/rdf-schema#label> "tem país"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_district> <http://www.w3.org/2000/01/rdf-schema#label> "tem bairro"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_economic_activity> <http://www.w3.org/2000/01/rdf-schema#label> "tem atividade econômica"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> <http://www.w3.org/2000/01/rdf-schema#label> "tem parte"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_agente_fisco> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_consumidor_final> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_destinatario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_documento_arrecadacao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_emitente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_entrega> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_finalidade_emissao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_forma_pagamento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_formato_impressao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_imposto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_informacoes_adicionais_contribuintes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_localizacao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_base_calculo_st> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modalidade_frete> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_modelo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_nota_referenciada> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_operacao_consumidor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_origem_mercadoria> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_regime_tributario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_reparticao_fiscal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_retirada> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_serie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_ambiente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_emissao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_identificacao_operacao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_tipo_operacao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/tem_transportador> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#broaderTransitive> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2004/02/skos/core#narrower> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#comment> "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."@en .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#label> "has broader"@en .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#label> "mais geral"@pt .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2004/02/skos/core#definition> "Relates a concept to a concept that is more general in meaning."@en .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#broaderTransitive
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2000/01/rdf-schema#label> "has broader transitive"@en .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2000/01/rdf-schema#label> "mais geral transitivo"@pt .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2004/02/skos/core#definition> "skos:broaderTransitive is a transitive superproperty of skos:broader." .
+<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#label> "has narrower"@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#label> "mais específico"@pt .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2004/02/skos/core#definition> "Relates a concept to a concept that is more specific in meaning."@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#narrowerTransitive
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#semanticRelation> .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2000/01/rdf-schema#label> "has narrower transitive"@en .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2000/01/rdf-schema#label> "mais específico transitivo"@pt .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2004/02/skos/core#definition> "skos:narrowerTransitive is a transitive superproperty of skos:narrower." .
+<http://www.w3.org/2004/02/skos/core#narrowerTransitive> <http://www.w3.org/2004/02/skos/core#scopeNote> "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#semanticRelation
+<http://www.w3.org/2004/02/skos/core#semanticRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/CST> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/alcance_da_entidade> <http://www.w3.org/2000/01/rdf-schema#label> "alcance da entidade"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_efetiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_icms_st> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/aliquota_pst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/bairro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/balsa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/campo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/chave> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cidade> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_atividade_economica> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_consumidor_final> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_entrega> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_estrangeiro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_finalidade_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_forma_pagamento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_formato_impressao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_identificacao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_contribuinte> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_informacoes_adicionais_fisco> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_numerico_chave> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_operacao_consumidor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_pais> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_retirada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_serie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_ambiiente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_identificacao_operacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_tipo_operacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/complemento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cpf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_pagamento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/data_saida> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/descricao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/descricao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/digito_verificador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/email> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_emissao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/hora_saida> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/indicador_inscricao_estadual> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_estadual_numerica> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid36 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_municipal> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/inscricao_suframa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/logradouro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/matricula> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/modalidade> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/motivo_desoneracao> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid42 <http://www.w3.org/2002/07/owl#unionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_fantasia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/nome_mnemonico> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid47 <http://www.w3.org/2002/07/owl#unionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/numero_terminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_bc_efetiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_diferimento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_diferimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_fcp_retido> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/2002/07/owl#unionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_margem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_base_calculo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_efetiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/percentual_reducao_bc_icms_st> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador de uma pessoa"@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/person_identifier> <http://www.w3.org/2000/01/rdf-schema#label> "person identifier"@en .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/razao_social> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/cnpj> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Organization> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/root_cnpj> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/telefone> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/texto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/uf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/vagao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_efetiva> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_fcp_retido> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_base_calculo_icms_st> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_fcp_retido> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid68 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desoneracao> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid72 <http://www.w3.org/2002/07/owl#unionOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_desonerado> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid75 <http://www.w3.org/2002/07/owl#unionOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_diferido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_diferido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_efetivo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_operacao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_retido> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_icms_st> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/valor_total> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid78 <http://www.w3.org/2002/07/owl#unionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/versao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "nome"@pt .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A Concept that classifies an Object" .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Papel"@pt .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Ruolo"@it .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> <http://www.w3.org/2000/01/rdf-schema#comment> "Informar o CEP do endereço , atualizado de acordo com a página da Empresa de Correios e Telégrafos – ECT na internet (http://www.correios.com.br/).\n\nIndicar o tipo de logradouro do endereço.\nIndicar o logradouro do endereço.\nInformar o bairro/distrito do endereço.\nInformar o município do endereço.\nInformar a sigla do estado para o endereço.\nIndicar o número do endereço.\nIndicar o tipo de complemento, informando os dados adicionais, se necessário, do endereço.\nInformar pontos de referência de conhecimento popular."@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address"@en .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Address> <http://www.w3.org/2000/01/rdf-schema#label> "Endereço"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Agente_FISCO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/codigo_cidade> .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#comment> "Informar a cidade para termos de localização."@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#label> "Cidade"@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Consumidor_Final> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> <http://www.w3.org/2000/01/rdf-schema#label> "País"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Destinatario_NF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> .
+_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/has_part> .
+_:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#comment> "O distrito será recuperado automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.\n\nCaso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.\n\nObservação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado.\n\nObservação: Esse campo será habilitado para preenchimento dependendo do interesse dos órgãos conveniados (Estados ou Municípios)."@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#label> "District"@en .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Arrecadacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Emitente_NF> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Entrega> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estabelecimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Estrangeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/e_parte_de> .
+_:genid87 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/abrevicao_UF> .
+_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "A UF será recuperada automaticamente, caso o CEP informado esteja codificado a nível de logradouro pela ECT.\n\nCaso o CEP informado não esteja codificado a nível de logradouro pela ECT, será liberado o preenchimento, que deverá ser informado de acordo com o endereço constante do ato constitutivo.\n\nObservação: Nos casos de inscrição de pessoas jurídicas domiciliadas no exterior – evento 107, informar o logradouro, complemento, bairro no exterior e, quando for o caso transliterado."@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Federative Unit"@en .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unidade Federativa"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Finalidade_Emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Forma_Pagamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Formato_Impressao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Frete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto_ST> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Imposto> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Contribuinte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Informacoes_Adicionais_Fisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Legal_Nature> <http://www.w3.org/2000/01/rdf-schema#label> "Natureza Legal"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> <http://www.w3.org/2000/01/rdf-schema#label> "Logradouro"@pt .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Escolher a localização onde seu estabelecimento está situado.\n\nAtenção: O estabelecimento pode estar numa rua, num pólo industrial, num pólo irrigado ou num shopping que não esteja previamente cadastrado. Neste caso, escolha a opção “Zona Urbana ou Zona Rural”."@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Localização"@pt .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Base_Calculo_ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modalidade_Frete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Modelo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NFS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/NF_Avulsa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Documento_Fiscal> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Normal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Nota_Referenciada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Nota_Referenciada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/OBS_Contribuinte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Operacao_Consumidor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Origem_Mercadoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Produto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Reparticao_Fiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Retirada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Serie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Servico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Item> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Simples_Nacional_Excesso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Regime_Tributario> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Substituto_Tributario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Ambiente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Emissao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Identificacao_Operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Tipo_Operacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Transportador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@pt .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/name> .
+_:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Pessoa"@pt .
+# 
+_:genid93 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid96 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2000/01/rdf-schema#label> "example"@en .
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/2004/02/skos/core#definition> "An example of the use of a concept."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid97 <http://www.w3.org/2002/07/owl#members> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/City> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Country> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/District> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Federative_Unit> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/Locality> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid103 <http://www.w3.org/2002/07/owl#members> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ANTERIOR_ST> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_COBRANCA_ST> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_DIFERIMENTO> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_INTEGRAL> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_ST> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_ISENTA_NAO_TRIBUTADA_SUSPENSA> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_OUTROS> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.sefaz.ma.gov.br/ontology/ComprasPublicas/ICMS_REDUCAO_BASE_CALCULO_ST> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
